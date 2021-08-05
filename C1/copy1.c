@@ -3,14 +3,33 @@
 /* copy input to output; 1st version */
 //Ctl + D = EOF
 
-int main() {
-    char c;
+//int main() {
+//    FILE *fp;
+//    char c;
+//
+//    fp = freopen("../resources/file.txt", "r", stdin);
+//
+//    c = (char) fgetc(fp);
+//    while (c != EOF) {
+//        putchar(c);
+//        c = (char) fgetc(fp);
+//    }
+//    fclose(fp);
+//    return 0;
+//}
 
-    c = (char) getchar();
+int main() {
+    FILE *fp;
+    int c;
+
+    fp = freopen("../resources/file.txt", "r", stdin);
+
+    c = fgetc(fp);
     while (c != EOF) {
         putchar(c);
-        c = (char) getchar();
+        c = fgetc(fp);
     }
+    fclose(fp);
     return 0;
 }
 
