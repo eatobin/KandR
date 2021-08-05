@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 /* count characters in input; 1st version */
-main()
-{
-	long nc;
+main() {
+    FILE *fp;
+    long nc;
 
-	nc = 0;
-	while (getchar() != EOF)
-		++nc;
-	printf("%ld\n", nc);
+    fp = freopen("../resources/file.txt", "r", stdin);
+
+    nc = 0;
+    while (fgetc(fp) != EOF)
+        ++nc;
+    printf("%ld\n", nc);
+
+    fclose(fp);
 }
