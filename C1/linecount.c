@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /* count lines in input */
-main() {
+int main()
+{
     FILE *fp;
     int c, nl;
 
-    fp = freopen("../resources/file.txt", "r", stdin);
+    fp = freopen("resources/file.txt", "r", stdin);
 
     nl = 0;
     while ((c = fgetc(fp)) != EOF)
@@ -14,4 +15,6 @@ main() {
     printf("%d\n", nl);
 
     fclose(fp);
+
+    return 0;
 }
