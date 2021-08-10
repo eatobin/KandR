@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /* count lines in input */
+// git
 int main()
 {
     FILE *fp;
