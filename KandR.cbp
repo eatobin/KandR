@@ -31,9 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="C1/hello.c">
+		<Unit filename="C1/linecount.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="resources/file.txt" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
