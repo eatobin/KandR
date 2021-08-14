@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-	char x = 65;
+	signed char x = -129;
 	printf("%d", x);
 	return 0;
 }
