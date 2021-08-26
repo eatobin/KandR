@@ -2,11 +2,9 @@
 
 #include "lower.c"
 
-main()
-{
-	int c;
+main() {
+  int c;
 
-	while ((c = getchar()) != EOF)
-		putchar(lower(c));
-	return 0;
+  while ((c = getchar()) != EOF) putchar(lower(c));
+  return 0;
 }
